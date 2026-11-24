@@ -1,0 +1,18 @@
+﻿import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {csv,plan,normaliseWarnings} from './engine.mjs';
+const rows=csv(fs.readFileSync(new URL('./towns.csv',import.meta.url),'utf8'));
+const h=rows.map(r=>({...r,p95:95,p99:100}));
+const now=new Date('2026-11-24T12:00:00Z');
+const run=(peak,w=[])=>plan(rows,h,Object.fromEntries(rows.map(r=>[r.town,peak])),w,now);
+assert(run(94).every(r=>r.level==='Normal'));
+assert(run(95).every(r=>r.level==='Standby'));
+const barriers=run(100);
+assert(barriers.find(r=>r.town==='Bandon').escalate);
+assert(barriers.filter(r=>r.crew==='Mallow').every(r=>r.town==='Mallow'));
+assert.equal(barriers.filter(r=>r.crew==='Athlone').length,2);
+const warning=normaliseWarnings([{type:'Rain',level:'orange',regions:['EI24'],onset:'2026-11-24T10:00:00Z',expiry:'2026-11-25T10:00:00Z'}]);
+assert.equal(run(94,warning).filter(r=>r.level==='Standby').length,2);
+rows[0].flow_override_m3s='150';rows[1].warning_override='orange';
+assert.equal(run(94)[0].level,'Barriers');assert.equal(run(94)[1].level,'Standby');
+console.log('PASS JavaScript: thresholds, crew capacity, Mallow note, unavailable barriers, official warning schema and Roscommon, rehearsal overrides.');
