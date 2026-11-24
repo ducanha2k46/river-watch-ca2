@@ -1,7 +1,8 @@
-﻿import {csv,plan,normaliseWarnings} from './engine.mjs';
+﻿import {defaultSheetUrl, sheetCsvUrl} from './settings.mjs';
+import {csv,plan,normaliseWarnings} from './engine.mjs';
 const $=id=>document.getElementById(id);
 const history=await fetch('history_summary.json').then(r=>r.json());
-$('sheet').value=localStorage.getItem('riverwatch-sheet')||'';
+$('sheet').value=localStorage.getItem('riverwatch-sheet')||defaultSheetUrl;
 $('save').onclick=()=>{localStorage.setItem('riverwatch-sheet',$('sheet').value.trim());sessionStorage.setItem('riverwatch-key',$('key').value);$('key').value='';$('status').textContent='Settings saved. Key is stored in this tab session only.';};
 $('forget').onclick=()=>{sessionStorage.removeItem('riverwatch-key');$('key').value='';$('status').textContent='Key forgotten.';};
 async function json(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status+' from '+new URL(url,location).hostname);return r.json();}
@@ -10,7 +11,7 @@ $('ask').onclick=async()=>{
  try{
   const question=$('question').value.trim();if(!question)throw Error('Enter a question.');
   if(/\b(house|home|insurance|coastal|tidal|road closure)\b/i.test(question)){$('answer').textContent='This tool cannot assess individual homes, coastal or tidal flooding, road closures or insurance. Contact the council area office.';return;}
-  const sheet=$('sheet').value.trim();if(!/^https:\/\/docs.google.com\/spreadsheets\//.test(sheet))throw Error('Set a published Google Sheet CSV URL.');
+  const sheet=sheetCsvUrl($('sheet').value.trim());if(!/^https:\/\/docs.google.com\/spreadsheets\//.test(sheet))throw Error('Set a published Google Sheet CSV URL.');
   $('status').textContent='Reading Sheet, river forecasts and official warnings…';
   const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Dublin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());const end=new Date(today+'T12:00:00Z');end.setUTCDate(end.getUTCDate()+2);
   const sheetResponse=await fetch(sheet,{cache:'no-store'});if(!sheetResponse.ok)throw Error('Sheet HTTP '+sheetResponse.status);const rows=csv(await sheetResponse.text());if(rows.length!==8||new Set(rows.map(r=>r.town)).size!==8)throw Error('Sheet must contain all eight distinct towns.');
@@ -25,3 +26,5 @@ $('ask').onclick=async()=>{
   $('status').textContent='Live retrieval complete. River validation is pending. '+(key?'AI explanation requested.':'Add a key for AI explanations.');
  }catch(e){$('status').textContent='Unable to complete question: '+e.message;}finally{$('ask').disabled=false;}
 };
+
+
