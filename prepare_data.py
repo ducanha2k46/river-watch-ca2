@@ -1,4 +1,4 @@
-﻿import json, urllib.request, urllib.parse, statistics, csv
+import json, urllib.request, urllib.parse, statistics, csv
 from pathlib import Path
 from datetime import datetime, timezone
 ROOT=Path(__file__).resolve().parent
@@ -7,15 +7,17 @@ def fetch(url):
     with urllib.request.urlopen(url,timeout=90) as r: return json.load(r)
 def main():
     raw=ROOT/'data'; raw.mkdir(exist_ok=True)
+    points=json.loads((ROOT/'river_points.json').read_text())
     summary=[]
     with (ROOT/'towns.csv').open('w',newline='',encoding='utf-8') as f:
         w=csv.writer(f); w.writerow('town,county,river,crew_based_here,barrier_sets,pumps,sandbags,staff_on_call,flow_override_m3s,warning_override,notes'.split(','))
         for name,county,river,lat,lon,crew,barriers,pumps,bags,staff,notes in TOWNS:
             w.writerow([name,county,river,crew,barriers,pumps,bags,staff,'','',notes])
     for name,county,river,lat,lon,*_ in TOWNS:
+        lat=points[name]['model_latitude']; lon=points[name]['model_longitude']
         params=dict(latitude=lat,longitude=lon,daily='river_discharge',start_date='2016-01-01',end_date='2025-12-31')
         url='https://flood-api.open-meteo.com/v1/flood?'+urllib.parse.urlencode(params)
-        path=raw/(name+'.json')
+        path=raw/(name+'_'+str(lat)+'_'+str(lon)+'.json')
         if path.exists(): data=json.loads(path.read_text())
         else:
             data=fetch(url); path.write_text(json.dumps(data),encoding='utf-8')
@@ -36,7 +38,7 @@ def main():
                     high=value>=p99
                     count+=high and not active; active=high
             events[str(year)]=count
-        summary.append(dict(town=name,county=county,river=river,latitude=lat,longitude=lon,grid_latitude=data['latitude'],grid_longitude=data['longitude'],river_verified=False,validation_note='Candidate town coordinates; named river and model grid catchment require independent validation.',p95=p95,p99=p99,median=statistics.median(values),days=len(values),events=events,total_events=sum(events.values()),first_four=sum(list(events.values())[:4]),last_four=sum(list(events.values())[-4:]),source=url,history_period='2016-01-01 to 2025-12-31',retrieved=datetime.now(timezone.utc).isoformat()))
+        summary.append(dict(town=name,county=county,river=river,latitude=lat,longitude=lon,grid_latitude=data['latitude'],grid_longitude=data['longitude'],river_verified=False,validation_note=points[name]['validation'],opw_station=points[name]['station'],p95=p95,p99=p99,median=statistics.median(values),days=len(values),events=events,total_events=sum(events.values()),first_four=sum(list(events.values())[:4]),last_four=sum(list(events.values())[-4:]),source=url,history_period='2016-01-01 to 2025-12-31',retrieved=datetime.now(timezone.utc).isoformat()))
         print(name,round(p95,3),round(p99,3),events,flush=True)
     (ROOT/'history_summary.json').write_text(json.dumps(summary,indent=2),encoding='utf-8')
 if __name__=='__main__': main()

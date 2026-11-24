@@ -1,0 +1,482 @@
+[
+  {
+    "town": "Clonmel",
+    "river": "Suir",
+    "cells": [
+      {
+        "latitude": 52.325005,
+        "longitude": -7.774994,
+        "distance_km": 5.91,
+        "median_2020": 0.37
+      },
+      {
+        "latitude": 52.325005,
+        "longitude": -7.724991,
+        "distance_km": 3.65,
+        "median_2020": 0.19
+      },
+      {
+        "latitude": 52.325005,
+        "longitude": -7.674988,
+        "distance_km": 3.83,
+        "median_2020": 0.19
+      },
+      {
+        "latitude": 52.375,
+        "longitude": -7.774994,
+        "distance_km": 5.36,
+        "median_2020": 23.77
+      },
+      {
+        "latitude": 52.375,
+        "longitude": -7.724991,
+        "distance_km": 2.67,
+        "median_2020": 23.92
+      },
+      {
+        "latitude": 52.375,
+        "longitude": -7.674988,
+        "distance_km": 2.92,
+        "median_2020": 27.939999999999998
+      },
+      {
+        "latitude": 52.425003,
+        "longitude": -7.774994,
+        "distance_km": 9.18,
+        "median_2020": 0.59
+      },
+      {
+        "latitude": 52.425003,
+        "longitude": -7.724991,
+        "distance_km": 7.91,
+        "median_2020": 0.78
+      },
+      {
+        "latitude": 52.425003,
+        "longitude": -7.674988,
+        "distance_km": 8.0,
+        "median_2020": 3.7
+      }
+    ]
+  },
+  {
+    "town": "Fermoy",
+    "river": "Blackwater",
+    "cells": [
+      {
+        "latitude": 52.075005,
+        "longitude": -8.324997,
+        "distance_km": 7.88,
+        "median_2020": 1.78
+      },
+      {
+        "latitude": 52.075005,
+        "longitude": -8.274994,
+        "distance_km": 7.1,
+        "median_2020": 2.18
+      },
+      {
+        "latitude": 52.075005,
+        "longitude": -8.224991,
+        "distance_km": 7.88,
+        "median_2020": 2.395
+      },
+      {
+        "latitude": 52.125,
+        "longitude": -8.324997,
+        "distance_km": 3.74,
+        "median_2020": 20.905
+      },
+      {
+        "latitude": 52.125,
+        "longitude": -8.274994,
+        "distance_km": 1.55,
+        "median_2020": 0.19
+      },
+      {
+        "latitude": 52.125,
+        "longitude": -8.224991,
+        "distance_km": 3.74,
+        "median_2020": 27.05
+      },
+      {
+        "latitude": 52.175003,
+        "longitude": -8.324997,
+        "distance_km": 5.25,
+        "median_2020": 4.405
+      },
+      {
+        "latitude": 52.175003,
+        "longitude": -8.274994,
+        "distance_km": 4.0,
+        "median_2020": 25.825000000000003
+      },
+      {
+        "latitude": 52.175003,
+        "longitude": -8.224991,
+        "distance_km": 5.25,
+        "median_2020": 26.86
+      }
+    ]
+  },
+  {
+    "town": "Mallow",
+    "river": "Blackwater",
+    "cells": [
+      {
+        "latitude": 52.075005,
+        "longitude": -8.674988,
+        "distance_km": 6.71,
+        "median_2020": 1.16
+      },
+      {
+        "latitude": 52.075005,
+        "longitude": -8.624985,
+        "distance_km": 6.43,
+        "median_2020": 0.19
+      },
+      {
+        "latitude": 52.075005,
+        "longitude": -8.574997,
+        "distance_km": 7.8,
+        "median_2020": 0.16
+      },
+      {
+        "latitude": 52.125,
+        "longitude": -8.674988,
+        "distance_km": 2.38,
+        "median_2020": 15.56
+      },
+      {
+        "latitude": 52.125,
+        "longitude": -8.624985,
+        "distance_km": 1.4,
+        "median_2020": 15.79
+      },
+      {
+        "latitude": 52.125,
+        "longitude": -8.574997,
+        "distance_km": 4.63,
+        "median_2020": 16.42
+      },
+      {
+        "latitude": 52.175003,
+        "longitude": -8.674988,
+        "distance_km": 5.28,
+        "median_2020": 0.22
+      },
+      {
+        "latitude": 52.175003,
+        "longitude": -8.624985,
+        "distance_km": 4.91,
+        "median_2020": 0.22
+      },
+      {
+        "latitude": 52.175003,
+        "longitude": -8.574997,
+        "distance_km": 6.61,
+        "median_2020": 16.240000000000002
+      }
+    ]
+  },
+  {
+    "town": "Bandon",
+    "river": "Bandon",
+    "cells": [
+      {
+        "latitude": 51.675003,
+        "longitude": -8.774994,
+        "distance_km": 8.41,
+        "median_2020": 0.37
+      },
+      {
+        "latitude": 51.675003,
+        "longitude": -8.724991,
+        "distance_km": 8.03,
+        "median_2020": 0.75
+      },
+      {
+        "latitude": 51.675003,
+        "longitude": -8.674988,
+        "distance_km": 9.06,
+        "median_2020": 0.34
+      },
+      {
+        "latitude": 51.725006,
+        "longitude": -8.774994,
+        "distance_km": 3.57,
+        "median_2020": 5.62
+      },
+      {
+        "latitude": 51.725006,
+        "longitude": -8.724991,
+        "distance_km": 2.58,
+        "median_2020": 0.25
+      },
+      {
+        "latitude": 51.725006,
+        "longitude": -8.674988,
+        "distance_km": 4.91,
+        "median_2020": 6.87
+      },
+      {
+        "latitude": 51.775,
+        "longitude": -8.774994,
+        "distance_km": 4.06,
+        "median_2020": 0.63
+      },
+      {
+        "latitude": 51.775,
+        "longitude": -8.724991,
+        "distance_km": 3.22,
+        "median_2020": 6.445
+      },
+      {
+        "latitude": 51.775,
+        "longitude": -8.674988,
+        "distance_km": 5.27,
+        "median_2020": 0.85
+      }
+    ]
+  },
+  {
+    "town": "Enniscorthy",
+    "river": "Slaney",
+    "cells": [
+      {
+        "latitude": 52.475006,
+        "longitude": -6.6249847,
+        "distance_km": 4.99,
+        "median_2020": 15.41
+      },
+      {
+        "latitude": 52.475006,
+        "longitude": -6.574997,
+        "distance_km": 3.06,
+        "median_2020": 0.2
+      },
+      {
+        "latitude": 52.475006,
+        "longitude": -6.524994,
+        "distance_km": 4.08,
+        "median_2020": 0.59
+      },
+      {
+        "latitude": 52.525,
+        "longitude": -6.6249847,
+        "distance_km": 4.73,
+        "median_2020": 12.385
+      },
+      {
+        "latitude": 52.525,
+        "longitude": -6.574997,
+        "distance_km": 2.62,
+        "median_2020": 12.15
+      },
+      {
+        "latitude": 52.525,
+        "longitude": -6.524994,
+        "distance_km": 3.77,
+        "median_2020": 0.405
+      },
+      {
+        "latitude": 52.575005,
+        "longitude": -6.6249847,
+        "distance_km": 9.03,
+        "median_2020": 9.12
+      },
+      {
+        "latitude": 52.575005,
+        "longitude": -6.574997,
+        "distance_km": 8.13,
+        "median_2020": 2.455
+      },
+      {
+        "latitude": 52.575005,
+        "longitude": -6.524994,
+        "distance_km": 8.56,
+        "median_2020": 2.25
+      }
+    ]
+  },
+  {
+    "town": "Ennis",
+    "river": "Fergus",
+    "cells": [
+      {
+        "latitude": 52.775,
+        "longitude": -9.024994,
+        "distance_km": 8.39,
+        "median_2020": 0.31
+      },
+      {
+        "latitude": 52.775,
+        "longitude": -8.974991,
+        "distance_km": 7.89,
+        "median_2020": 15.085
+      },
+      {
+        "latitude": 52.775,
+        "longitude": -8.924988,
+        "distance_km": 8.76,
+        "median_2020": 0.37
+      },
+      {
+        "latitude": 52.825005,
+        "longitude": -9.024994,
+        "distance_km": 3.71,
+        "median_2020": 11.68
+      },
+      {
+        "latitude": 52.825005,
+        "longitude": -8.974991,
+        "distance_km": 2.38,
+        "median_2020": 2.7649999999999997
+      },
+      {
+        "latitude": 52.825005,
+        "longitude": -8.924988,
+        "distance_km": 4.48,
+        "median_2020": 2.365
+      },
+      {
+        "latitude": 52.875,
+        "longitude": -9.024994,
+        "distance_km": 4.32,
+        "median_2020": 10.735
+      },
+      {
+        "latitude": 52.875,
+        "longitude": -8.974991,
+        "distance_km": 3.25,
+        "median_2020": 0.59
+      },
+      {
+        "latitude": 52.875,
+        "longitude": -8.924988,
+        "distance_km": 5.0,
+        "median_2020": 0.28
+      }
+    ]
+  },
+  {
+    "town": "Athlone",
+    "river": "Shannon",
+    "cells": [
+      {
+        "latitude": 53.375,
+        "longitude": -7.974991,
+        "distance_km": 5.78,
+        "median_2020": 91.15
+      },
+      {
+        "latitude": 53.375,
+        "longitude": -7.924988,
+        "distance_km": 5.43,
+        "median_2020": 1.28
+      },
+      {
+        "latitude": 53.375,
+        "longitude": -7.8749847,
+        "distance_km": 6.89,
+        "median_2020": 0.865
+      },
+      {
+        "latitude": 53.425003,
+        "longitude": -7.974991,
+        "distance_km": 2.26,
+        "median_2020": 89.78
+      },
+      {
+        "latitude": 53.425003,
+        "longitude": -7.924988,
+        "distance_km": 1.08,
+        "median_2020": 0.66
+      },
+      {
+        "latitude": 53.425003,
+        "longitude": -7.8749847,
+        "distance_km": 4.37,
+        "median_2020": 0.22
+      },
+      {
+        "latitude": 53.475006,
+        "longitude": -7.974991,
+        "distance_km": 6.2,
+        "median_2020": 1.09
+      },
+      {
+        "latitude": 53.475006,
+        "longitude": -7.924988,
+        "distance_km": 5.87,
+        "median_2020": 0.215
+      },
+      {
+        "latitude": 53.475006,
+        "longitude": -7.8749847,
+        "distance_km": 7.24,
+        "median_2020": 0.44
+      }
+    ]
+  },
+  {
+    "town": "Carrick-on-Shannon",
+    "river": "Shannon",
+    "cells": [
+      {
+        "latitude": 53.875,
+        "longitude": -8.124985,
+        "distance_km": 7.91,
+        "median_2020": 1.38
+      },
+      {
+        "latitude": 53.875,
+        "longitude": -8.074997,
+        "distance_km": 7.77,
+        "median_2020": 0.28
+      },
+      {
+        "latitude": 53.875,
+        "longitude": -8.024994,
+        "distance_km": 8.92,
+        "median_2020": 30.990000000000002
+      },
+      {
+        "latitude": 53.925003,
+        "longitude": -8.124985,
+        "distance_km": 2.88,
+        "median_2020": 24.35
+      },
+      {
+        "latitude": 53.925003,
+        "longitude": -8.074997,
+        "distance_km": 2.48,
+        "median_2020": 24.97
+      },
+      {
+        "latitude": 53.925003,
+        "longitude": -8.024994,
+        "distance_km": 5.04,
+        "median_2020": 25.455
+      },
+      {
+        "latitude": 53.975006,
+        "longitude": -8.124985,
+        "distance_km": 3.96,
+        "median_2020": 12.120000000000001
+      },
+      {
+        "latitude": 53.975006,
+        "longitude": -8.074997,
+        "distance_km": 3.68,
+        "median_2020": 0.31
+      },
+      {
+        "latitude": 53.975006,
+        "longitude": -8.024994,
+        "distance_km": 5.72,
+        "median_2020": 0.3
+      }
+    ]
+  }
+]

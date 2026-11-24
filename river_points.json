@@ -1,0 +1,170 @@
+{
+  "Clonmel": {
+    "station": {
+      "type": "Feature",
+      "id": 95,
+      "properties": {
+        "name": "Clonmel",
+        "ref": "0000016011"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.694598,
+          52.351525
+        ]
+      }
+    },
+    "model_latitude": 52.375,
+    "model_longitude": -7.725,
+    "source": "https://waterlevel.ie/geojson/",
+    "validation": "OPW named-town station anchors the location. Neighbour-cell discharge screening selects a plausible main-river cell. Raster river-network identity is not independently proven; model flow is not gauge flow."
+  },
+  "Fermoy": {
+    "station": {
+      "type": "Feature",
+      "id": 128,
+      "properties": {
+        "name": "Fermoy Bridge U/S",
+        "ref": "0000018106"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.276634,
+          52.138568
+        ]
+      }
+    },
+    "model_latitude": 52.175,
+    "model_longitude": -8.275,
+    "source": "https://waterlevel.ie/geojson/",
+    "validation": "OPW named-town station anchors the location. Neighbour-cell discharge screening selects a plausible main-river cell. Raster river-network identity is not independently proven; model flow is not gauge flow."
+  },
+  "Mallow": {
+    "station": {
+      "type": "Feature",
+      "id": 124,
+      "properties": {
+        "name": "Mallow Town Bridge U/S",
+        "ref": "0000018056"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.641608,
+          52.13234
+        ]
+      }
+    },
+    "model_latitude": 52.125,
+    "model_longitude": -8.625,
+    "source": "https://waterlevel.ie/geojson/",
+    "validation": "OPW named-town station anchors the location. Neighbour-cell discharge screening selects a plausible main-river cell. Raster river-network identity is not independently proven; model flow is not gauge flow."
+  },
+  "Bandon": {
+    "station": {
+      "type": "Feature",
+      "id": 148,
+      "properties": {
+        "name": "Bandon",
+        "ref": "0000020001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.731538,
+          51.746954
+        ]
+      }
+    },
+    "model_latitude": 51.775,
+    "model_longitude": -8.725,
+    "source": "https://waterlevel.ie/geojson/",
+    "validation": "OPW named-town station anchors the location. Neighbour-cell discharge screening selects a plausible main-river cell. Raster river-network identity is not independently proven; model flow is not gauge flow."
+  },
+  "Enniscorthy": {
+    "station": {
+      "type": "Feature",
+      "id": 44,
+      "properties": {
+        "name": "Enniscorthy",
+        "ref": "0000012002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.566852,
+          52.502307
+        ]
+      }
+    },
+    "model_latitude": 52.525,
+    "model_longitude": -6.575,
+    "source": "https://waterlevel.ie/geojson/",
+    "validation": "OPW named-town station anchors the location. Neighbour-cell discharge screening selects a plausible main-river cell. Raster river-network identity is not independently proven; model flow is not gauge flow."
+  },
+  "Ennis": {
+    "station": {
+      "type": "Feature",
+      "id": 277,
+      "properties": {
+        "name": "Ennis Bridge",
+        "ref": "0000027066"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.981789,
+          52.846674
+        ]
+      }
+    },
+    "model_latitude": 52.825,
+    "model_longitude": -9.025,
+    "source": "https://waterlevel.ie/geojson/",
+    "validation": "OPW named-town station anchors the location. Neighbour-cell discharge screening selects a plausible main-river cell. Raster river-network identity is not independently proven; model flow is not gauge flow."
+  },
+  "Athlone": {
+    "station": {
+      "type": "Feature",
+      "id": 244,
+      "properties": {
+        "name": "Athlone",
+        "ref": "0000026027"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.940756,
+          53.421534
+        ]
+      }
+    },
+    "model_latitude": 53.425,
+    "model_longitude": -7.975,
+    "source": "https://waterlevel.ie/geojson/",
+    "validation": "OPW named-town station anchors the location. Neighbour-cell discharge screening selects a plausible main-river cell. Raster river-network identity is not independently proven; model flow is not gauge flow."
+  },
+  "Carrick-on-Shannon": {
+    "station": {
+      "type": "Feature",
+      "id": 263,
+      "properties": {
+        "name": "Carrick-On-Shannon",
+        "ref": "0000026324"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.095558601188694,
+          53.943210314852095
+        ]
+      }
+    },
+    "model_latitude": 53.925,
+    "model_longitude": -8.075,
+    "source": "https://waterlevel.ie/geojson/",
+    "validation": "OPW named-town station anchors the location. Neighbour-cell discharge screening selects a plausible main-river cell. Raster river-network identity is not independently proven; model flow is not gauge flow."
+  }
+}
